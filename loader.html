@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .container{
+                width: 400px;
+                padding: 10px;
+                background-color: blanchedalmond;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);   
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .loading::after {
+                content: '';
+                height: 8px;
+                width: 20%;
+                position: absolute;
+                top:0;
+                left:0;
+                background-color: darkcyan;
+                border-radius: 10px;
+                animation: loading 1.5s infinite ease-in-out;
+            }
+
+            @keyframes loading {
+                0% {left: 0%}
+                50% {left: 80%}
+                100% {left: 0%}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container loading"> 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto officiis labore quidem consequatur. Tempore nostrum magni doloribus, iusto, magnam facilis tempora iure repellendus cumque obcaecati laboriosam ipsam! Sequi, natus optio.
+            Ipsam voluptas obcaecati sapiente architecto iure deserunt non harum exercitationem facere tenetur, dicta sunt pariatur quia omnis animi vel molestias quisquam. Itaque sint soluta minima impedit corrupti nesciunt labore nam!
+            Obcaecati quaerat, pariatur dicta voluptates ipsum, repellat quae quidem, consectetur aliquid nemo aperiam quo accusamus. Optio qui nobis velit tempora nemo ea voluptates, nulla commodi ut dolore saepe molestias. Incidunt!
+            Optio adipisci saepe ipsa sed distinctio quia cum consequuntur provident eum? Nobis placeat error architecto sunt nostrum facilis cum optio quia inventore delectus quam maxime at, ea, laudantium hic numquam.
+            
+        </div>
+    </body>
+</html>
